@@ -126,8 +126,8 @@ a{
 	font-size: 14px;
 	height: 60px;
 	background: #7b4397; 
-	background: -webkit-linear-gradient(to right, #dc2430, #7b4397); 
-	background: linear-gradient(to right, #dc2430, #7b4397);
+	background: -webkit-linear-gradient(to right,#05e6aa,#1cbdf9); 
+	background: linear-gradient(to right,#05e6aa,#1cbdf9);
 
 	-webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
 	-moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
@@ -264,8 +264,8 @@ a{
 	top: -70px;
 	left: 0;
 	background: #7b4397; 
-	background: -webkit-linear-gradient(to right, #dc2430, #7b4397); 
-	background: linear-gradient(to right, #dc2430, #7b4397);
+	background: -webkit-linear-gradient(to right,#05e6aa,#1cbdf9); 
+	background: linear-gradient(to right,#05e6aa,#1cbdf9);
 
 	-webkit-transition: top 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000); 
 	-moz-transition: top 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000); 
@@ -627,8 +627,8 @@ a{
     text-decoration: none;
     color: rgba(255,255,255,1);
     background: #7b4397; 
-	background: -webkit-linear-gradient(to right, #dc2430, #7b4397); 
-	background: linear-gradient(to right, #dc2430, #7b4397);
+	background: -webkit-linear-gradient(to right,#05e6aa,#1cbdf9); 
+	background: linear-gradient(to right,#05e6aa,#1cbdf9);
 }
 .post-box .post-title{
 	margin: 0 0 14px 0;
@@ -2413,8 +2413,8 @@ blockquote span{
 }
 .error-code{
 	background: #7b4397; 
-	background: -webkit-linear-gradient(to right, #dc2430, #7b4397); 
-	background: linear-gradient(to right, #dc2430, #7b4397);
+	background: -webkit-linear-gradient(to right,#05e6aa,#1cbdf9); 
+	background: linear-gradient(to right,#05e6aa,#1cbdf9);
 	display: inline-block;
 	padding: 50px 100px;
 	font-size: 160px;
