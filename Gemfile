@@ -48,3 +48,17 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'pg'
+
+group :development do
+  gem 'better_errors'
+  gem 'rails_layout'
+end
+
+group :development, :test do
+  gem 'pry-rails'
+  gem 'pry-rescue'
+  gem 'rubocop'
+end
+
