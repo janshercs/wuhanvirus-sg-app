@@ -8,12 +8,12 @@
       </div>
       <div class="w-boxed-post">
         <ul>
-          <% Article.all.each do |article| %>
+          <% @articles.each_with_index do |article, i| %>
             <li>
               <a href="#" style="background-image: url(<%= rails_blob_url(article.image) %>);">
                 <div class="box-wrapper">
                   <div class="box-left">
-                    <span>1</span>
+                    <span><%= i+1 %></span>
                   </div>
                   <div class="box-right">
                     <h3 class="p-title"><%= article.headline %></h3>
