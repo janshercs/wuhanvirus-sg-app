@@ -20,8 +20,8 @@
 
           <!--Timeline items start -->
           <div class="timeline-items">
-            <% 10.times.each do %>
-              <%= render "article_preview" %>
+            <% Article.all.each do %>
+              <%= render "article_preview", article: @article %>
             <% end %>
           </div>
           <!--Timeline items end -->

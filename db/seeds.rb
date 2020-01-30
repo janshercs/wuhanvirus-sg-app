@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Article.create!(
+  link: "https://mothership.sg/2020/01/wuhan-virus-sbcc-tiong-bahru/", 
+  headline: "Suspected case at Tiong Bahru baby clinic tests negative for Wuhan coronavirus",
+  preview: "Suspected case at Tiong Bahru Plaza has been confirmed to be negative",
+  source: "Mothership.sg"  
+)
