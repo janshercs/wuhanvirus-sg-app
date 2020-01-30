@@ -10,6 +10,9 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
+ *= require plugins/zebra-tooltip/zebra_tooltips
+ *= require plugins/owl-carousel/assets/owl.carousel
+ *= require main-style
+ *= require responsive-style
  *= require_self
  */
