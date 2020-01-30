@@ -19,8 +19,8 @@
 
           <!--Timeline items start -->
           <div class="timeline-items">
-            <% Article.all.each do %>
-              <%= render "article_preview", article: @article %>
+            <% @articles.each do |article| %>
+              <%= render "article_preview", article: article %>
             <% end %>
           </div>
           <!--Timeline items end -->
