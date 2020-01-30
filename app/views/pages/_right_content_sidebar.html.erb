@@ -8,66 +8,23 @@
       </div>
       <div class="w-boxed-post">
         <ul>
-          <li class="active">
-            <a href="#" style="background-image: url(img/news-test-images/news-img7.jpg);">
-              <div class="box-wrapper">
-                <div class="box-left">
-                  <span>1</span>
-                </div>
-                <div class="box-right">
-                  <h3 class="p-title">Things to Consider When Choosing City Moving Companies</h3>
-                  <div class="p-icons">
-                    213 likes . 124 comments
+          <% Article.all.each do |article| %>
+            <li>
+              <a href="#" style="background-image: url(img/news-test-images/news-img7.jpg);">
+                <div class="box-wrapper">
+                  <div class="box-left">
+                    <span>1</span>
+                  </div>
+                  <div class="box-right">
+                    <h3 class="p-title"><%= article.headline %></h3>
+                    <div class="p-icons">
+                      213 likes . 124 comments
+                    </div>
                   </div>
                 </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" style="background-image: url(img/news-test-images/news-img5.jpg);">
-              <div class="box-wrapper">
-                <div class="box-left">
-                  <span>2</span>
-                </div>
-                <div class="box-right">
-                  <h3 class="p-title">Things to Consider When Choosing City Moving Companies</h3>
-                  <div class="p-icons">
-                    213 likes . 124 comments
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" style="background-image: url(img/news-test-images/news-img6.jpg);">
-              <div class="box-wrapper">
-                <div class="box-left">
-                  <span>3</span>
-                </div>
-                <div class="box-right">
-                  <h3 class="p-title">Things to Consider When Choosing City Moving Companies</h3>
-                  <div class="p-icons">
-                    213 likes . 124 comments
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" style="background-image: url(img/news-test-images/news-img3.jpg);">
-              <div class="box-wrapper">
-                <div class="box-left">
-                  <span>4</span>
-                </div>
-                <div class="box-right">
-                  <h3 class="p-title">Things to Consider When Choosing City Moving Companies</h3>
-                  <div class="p-icons">
-                    213 likes . 124 comments
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
+              </a>
+            </li>
+          <% end %>
         </ul>
       </div>
     </div>
