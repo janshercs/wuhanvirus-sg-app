@@ -24,6 +24,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'material_icons'
 gem "aws-sdk-s3", require: false
 gem "mini_magick"
+gem "shortener"
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false

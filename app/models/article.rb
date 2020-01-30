@@ -1,5 +1,14 @@
 class Article < ApplicationRecord
-  has_one_attached :image
+  validates :headline, :preview, :source, :image, presence: true
 
-  validates :link, :headline, :preview, :source, :image, presence: true
+  has_one_attached :image
+  has_shortened_urls
+
+  def link
+    begin 
+      shortened_urls.first.unique_key
+    rescue
+      ""
+    end
+  end
 end
