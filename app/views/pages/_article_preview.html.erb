@@ -21,7 +21,7 @@
 
         <%= link_to article.source, article.link, target: :_blank %>
         <span class="dot"></span>
-        <span class="comment"><%= article.created_at %></span>
+        <span class="comment"><%= article.created_at.strftime("%d %b %Y %I:%M%P") %></span>
         <span class="dot"></span>
         <span class="comment">32 comments</span>
       </div>
