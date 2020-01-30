@@ -14,5 +14,6 @@
  *= require plugins/owl-carousel/assets/owl.carousel
  *= require main-style
  *= require responsive-style
+ *= require material_icons
  *= require_self
  */
