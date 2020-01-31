@@ -18,11 +18,5 @@ module WuhanvirusSg
 
     # set timezone to singapore
     config.time_zone = "Singapore"
-
-    # use rack tracker to record analytics
-    config.middleware.use(Rack::Tracker) do
-      handler :google_analytics, { tracker: ENV['GOOGLE_ANALYTICS_ID'] }
-      handler :facebook_pixel, { id: ENV['FACEBOOK_PIXEL_ID'] }
-    end
   end
 end
