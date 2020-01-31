@@ -1,5 +1,5 @@
 class Article < ApplicationRecord
-  validates :headline, :preview, :source, :image, presence: true
+  validates :headline, :source, :image, presence: true
 
   has_one_attached :image
   has_shortened_urls
