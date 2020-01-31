@@ -115,4 +115,9 @@ Rails.application.configure do
     handler :google_analytics, { tracker: ENV['GOOGLE_ANALYTICS_ID'] }
     handler :facebook_pixel, { id: ENV['FACEBOOK_PIXEL_ID'] }
   end
+
+  # set up sentry for error reporting
+  Raven.configure do |config|
+    config.dsn = ENV['SENTRY_DSN']
+  end
 end
