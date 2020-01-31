@@ -46,3 +46,60 @@
   </section>
 
 </main>
+
+<%= content_for :page_scripts do %>
+  <script>
+    //making sidebars fix to screen top.
+    var setStickySidebar = function(){
+      //if window screen < 960 sidebar hiding.
+      if (window.outerWidth > 960)
+      {
+        var sidebar = $('.sidebar_inner');
+        var sidebarHeight = sidebar.outerHeight();
+        var windowHeight = $(window).height();
+        var wrapperTopPos = $('.main-content').position().top;
+        var scrollTop = $(this).scrollTop();
+
+        if ((sidebarHeight+30) < windowHeight)
+        {
+          if ((scrollTop+30) > wrapperTopPos)
+            sidebar.css({'position':'fixed', 'top':30});
+          else
+            sidebar.css({'position':'absolute', 'top':0});
+        }
+        else
+        {
+          if (scrollTop > (wrapperTopPos+30+sidebarHeight-windowHeight))
+            sidebar.css({'position':'fixed', 'top':-(sidebarHeight+30-windowHeight)});
+          else
+            sidebar.css({'position':'absolute', 'top':0});
+
+        }
+
+        if ($('.article-left-box-inner').length)
+        {
+
+          var leftSidebar = $('.article-left-box-inner');
+          var leftSidebarH = leftSidebar.outerHeight();
+          var endOfTheArticlePos = $('#endOfTheArticle').offset().top;
+
+          if ((scrollTop+30) > wrapperTopPos)
+          {
+            if ((scrollTop+leftSidebarH+80) > endOfTheArticlePos)
+              leftSidebar.css({'position':'absolute', 'top':'auto', 'bottom':10});
+            else
+              leftSidebar.css({'position':'fixed', 'top':70, 'bottom':'auto'});
+          }
+          else
+            leftSidebar.css({'position':'absolute', 'top':0, 'bottom':'auto'});
+
+          
+        }
+      }
+    }
+
+    $(document).ready(function(){ setStickySidebar.call($(window)); })
+
+    $(window).on('scroll',function () { setStickySidebar.call(this); });
+  </script>
+<% end %>

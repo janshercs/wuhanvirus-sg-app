@@ -81,56 +81,6 @@ var addWaveEffect = function (self, e){
 	})
 }
 
-//making sidebars fix to screen top.
-var setStickySidebar = function(){
-	//if window screen < 960 sidebar hiding.
-	if (window.outerWidth > 960)
-	{
-		var sidebar = $('.sidebar_inner');
-		var sidebarHeight = sidebar.outerHeight();
-		var windowHeight = $(window).height();
-		var wrapperTopPos = $('.main-content').position().top;
-		var scrollTop = $(this).scrollTop();
-
-		if ((sidebarHeight+30) < windowHeight)
-		{
-			if ((scrollTop+30) > wrapperTopPos)
-				sidebar.css({'position':'fixed', 'top':30});
-			else
-				sidebar.css({'position':'absolute', 'top':0});
-		}
-		else
-		{
-			if (scrollTop > (wrapperTopPos+30+sidebarHeight-windowHeight))
-				sidebar.css({'position':'fixed', 'top':-(sidebarHeight+30-windowHeight)});
-			else
-				sidebar.css({'position':'absolute', 'top':0});
-
-		}
-
-		if ($('.article-left-box-inner').length)
-		{
-
-			var leftSidebar = $('.article-left-box-inner');
-			var leftSidebarH = leftSidebar.outerHeight();
-			var endOfTheArticlePos = $('#endOfTheArticle').offset().top;
-
-			if ((scrollTop+30) > wrapperTopPos)
-			{
-				if ((scrollTop+leftSidebarH+80) > endOfTheArticlePos)
-					leftSidebar.css({'position':'absolute', 'top':'auto', 'bottom':10});
-				else
-					leftSidebar.css({'position':'fixed', 'top':70, 'bottom':'auto'});
-			}
-			else
-				leftSidebar.css({'position':'absolute', 'top':0, 'bottom':'auto'});
-
-			
-		}
-	}
-}
-
-
 /*detail page parallax effect script */
 var makeParallax = function(){
 	var scrollTop = $(this).scrollTop();
@@ -242,8 +192,6 @@ $(document).ready(function(){
 
 	$('.article-left-box').css('height',$('.article-inner').outerHeight())
 
-	setStickySidebar.call($(window));
-
 	makeParallax.call($(window));
 
 	$('.material-button').on('click', function(e) {
@@ -268,7 +216,6 @@ $(document).ready(function(){
 	//trigger scrollable elements actions
     $(window).on('scroll',function () {
     	showHideHeader.call(this);
-    	setStickySidebar.call(this);
     	makeParallax.call(this);
     });
 
