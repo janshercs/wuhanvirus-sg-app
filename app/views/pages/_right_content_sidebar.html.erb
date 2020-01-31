@@ -8,7 +8,7 @@
       </div>
       <div class="w-boxed-post">
         <ul>
-          <% @articles.each_with_index do |article, i| %>
+          <% @articles.first(5).each_with_index do |article, i| %>
             <li>
               <a href="<%= article.link %>" target="_blank" style="background-image: url(<%= rails_blob_url(article.image) %>);">
                 <div class="box-wrapper">
