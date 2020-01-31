@@ -1,0 +1,210 @@
+{
+    "bbox": [
+        -178.7298,
+        -55.755,
+        5,
+        179.1278,
+        59.8935,
+        664
+    ],
+    "features": [
+        {
+            "geometry": {
+                "coordinates": [
+                    103.810018,
+                    1.257763
+                ],
+                "type": "Point"
+            },
+            "id": "us100049i1",
+            "properties": {
+                "alert": "red",
+                "code": "100049i1",
+                "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us100049i1&format=geojson",
+                "case": 1,
+                "size": 1,
+                "place": "Shangri-La Rasa Sentosa",
+                "sources": "media",
+                "status": "confirmed",
+                "time": 1579478400000,
+                "patient": "66 year old Wuhan Man",
+                "type": "imported case",
+                "tz": 270,
+                "updated": 1579478400000,
+                "url": "1"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    103.858527,
+                    1.307628
+                ],
+                "type": "Point"
+            },
+            "id": "us100049i1",
+            "properties": {
+                "alert": "red",
+                "code": "100049i1",
+                "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us100049i1&format=geojson",
+                "case": 2,
+                "size": 1,
+                "place": "J8 Hotel",
+                "sources": "media",
+                "status": "confirmed",
+                "time": 1579824000000,
+                "patient": "53 years old Wuhan Woman",
+                "type": "imported case",
+                "tz": 270,
+                "updated": 1579824000000,
+                "url": "2"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    103.810018,
+                    1.257763
+                ],
+                "type": "Point"
+            },
+            "id": "us100049i1",
+            "properties": {
+                "alert": "red",
+                "code": "100049i1",
+                "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us100049i1&format=geojson",
+                "case": 3,
+                "size": 1,
+                "place": "Shangri-La Rasa Sentosa",
+                "sources": "media",
+                "status": "confirmed",
+                "time": 1579824000000,
+                "patient": "36 years old Wuhan Man\nSon of 1st confirmed case.",
+                "type": "imported case",
+                "tz": 270,
+                "updated": 1579824000000,
+                "url": "3"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    103.821425,
+                    1.253273
+                ],
+                "type": "Point"
+            },
+            "id": "us100049i1",
+            "properties": {
+                "alert": "red",
+                "code": "100049i1",
+                "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us100049i1&format=geojson",
+                "case": 4,
+                "size": 1,
+                "place": "Village Hotel Sentosa",
+                "sources": "media",
+                "status": "confirmed",
+                "time": 1579987800000,
+                "patient": "36 years old Wuhan Man",
+                "type": "imported case",
+                "tz": 270,
+                "updated": 1579987800000,
+                "url": "4"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    103.898331,
+                    1.311891
+                ],
+                "type": "Point"
+            },
+            "id": "us100049i1",
+            "properties": {
+                "alert": "red",
+                "code": "100049i1",
+                "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us100049i1&format=geojson",
+                "case": 5,
+                "size": 1,
+                "place": "Ceylon Road",
+                "sources": "media",
+                "status": "confirmed",
+                "time": 1580083200000,
+                "patient": "56 years old Wuhan Woman",
+                "type": "imported case",
+                "tz": 270,
+                "updated": 1580083200000,
+                "url": "4"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    103.944769,
+                    1.372431
+                ],
+                "type": "Point"
+            },
+            "id": "us100049i1",
+            "properties": {
+                "alert": "red",
+                "code": "100049i1",
+                "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us100049i1&format=geojson",
+                "case": 6,
+                "size": 1,
+                "place": "Pasir Ris Grove",
+                "sources": "media",
+                "status": "confirmed",
+                "time": 1580166000000,
+                "patient": "56 years old Wuhan Man",
+                "type": "imported case",
+                "tz": 270,
+                "updated": 1580166000000,
+                "url": "4"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    103.860852,
+                    1.283769
+                ],
+                "type": "Point"
+            },
+            "id": "us100049i1",
+            "properties": {
+                "alert": "red",
+                "code": "100049i1",
+                "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us100049i1&format=geojson",
+                "case": 7,
+                "size": 1,
+                "place": "Marina Bay Sands",
+                "sources": "media",
+                "status": "confirmed",
+                "time": 1580166000000,
+                "patient": "35 years old Wuhan Man",
+                "type": "imported case",
+                "tz": 270,
+                "updated": 1580166000000,
+                "url": "4"
+            },
+            "type": "Feature"
+        }
+    ],
+    "metadata": {
+        "api": "1.1.1",
+        "count": 156,
+        "generated": 1455162818000,
+        "status": 200,
+        "title": "USGS Earthquakes",
+        "url": "http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2015-01-01&endtime=2015-12-31&minmagnitude=6"
+    },
+    "type": "FeatureCollection"
+}

@@ -4,8 +4,8 @@
   .map-overlay {
     font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
     position: absolute;
-    width: 25%;
-    top: 0;
+    width: 360px;
+    top: 20;
     left: 0;
     padding: 10px;
   }
@@ -47,14 +47,14 @@
 
     <div class="map-overlay top">
       <div class="map-overlay-inner">
-        <h2>Significant earthquakes in 2015</h2>
-        <label id="month"></label>
-        <input id="slider" type="range" min="0" max="11" step="1" value="0" />
+        <h2>Cases in Singapore</h2>
+        <label id="day"></label>
+        <input id="slider" type="range" min="0" max="9" step="1" value="9" />
       </div>
       <div class="map-overlay-inner">
         <div id="legend" class="legend">
           <div class="bar"></div>
-          <div>Magnitude (m)</div>
+          <div>Case</div>
         </div>
       </div>
     </div>
@@ -76,38 +76,35 @@
       container: 'map',
       style: 'mapbox://styles/mapbox/streets-v11',
       center: [103.8520359, 1.3454753],
-      zoom: 12,
+      zoom: 10,
       maxBounds: bounds
     });
 
     var days = [
-      'January',
-      'February',
-      'March',
-      'April',
-      'May',
-      'June',
-      'July',
-      'August',
-      'September',
-      'October',
-      'November',
-      'December'
+      '23rd January 2020',
+      '24th January 2020',
+      '25th January 2020',
+      '26th January 2020',
+      '27th January 2020',
+      '28th January 2020',
+      '29th January 2020',
+      '30th January 2020',
+      '31st January 2020',
     ];
 
     function filterBy(day) {
-      var filters = ['==', 'day', day];
-      map.setFilter('earthquake-circles', filters);
-      map.setFilter('earthquake-labels', filters);
+      var filters = ['<=', 'day', day];
+      map.setFilter('case-circles', filters);
+      map.setFilter('case-labels', filters);
 
-  // Set the label to the month
-  document.getElementById('day').textContent = days[day];
+  // Set the label to the day
+  document.getElementById('day').textContent = day;
   }
 
   map.on('load', function() {
-  // Data courtesy of http://earthquake.usgs.gov/
-  // Query for significant earthquakes in 2015 URL request looked like this:
-  // http://earthquake.usgs.gov/fdsnws/event/1/query
+  // Data courtesy of http://case.usgs.gov/
+  // Query for significant cases in 2015 URL request looked like this:
+  // http://case.usgs.gov/fdsnws/event/1/query
   //    ?format=geojson
   //    &starttime=2015-01-01
   //    &endtime=2015-12-31
@@ -116,81 +113,89 @@
   // Here we're using d3 to help us make the ajax request but you can use
   // Any request method (library or otherwise) you wish.
   d3.json(
-    'https://docs.mapbox.com/mapbox-gl-js/assets/significant-earthquakes-2015.geojson',
-    function(err, data) {
-      if (err) throw err;
+    '/test.json',
+    // 'https://docs.mapbox.com/mapbox-gl-js/assets/significant-cases-2015.geojson',
+      function(err, data) {
+        if (err) throw err;
 
-  // Create a month property value based on time
-  // used to filter against.
-  data.features = data.features.map(function(d) {
-    d.properties.month = new Date(d.properties.time).getMonth();
-    return d;
-  });
+        // Create a day property value based on time
+        // used to filter against.
+        data.features = data.features.map(function(d) {
+          d.properties.day = moment(d.properties.time).format('Do MMMM YYYY');
+          // d.properties.day = new Date(d.properties.time).getDate();
+          // d = {
+          //   'type': "Feature", 
+          //   'properties':
+          // }
+          return d;
+        });
 
-  map.addSource('earthquakes', {
-    'type': 'geojson',
-    data: data
-  });
+      map.addSource('cases', {
+        'type': 'geojson',
+        data: data
+      });
 
-  map.addLayer({
-    'id': 'earthquake-circles',
-    'type': 'circle',
-    'source': 'earthquakes',
-    'paint': {
-      'circle-color': [
-      'interpolate',
-      ['linear'],
-      ['get', 'mag'],
-      6,
-      '#FCA107',
-      8,
-      '#7F3121'
-      ],
-      'circle-opacity': 0.75,
-      'circle-radius': [
-      'interpolate',
-      ['linear'],
-      ['get', 'mag'],
-      6,
-      20,
-      8,
-      40
-      ]
-    }
-  });
+      map.addLayer({
+        'id': 'case-circles',
+        'type': 'circle',
+        'source': 'cases',
+        'paint': {
+          'circle-color': [
+          'interpolate',
+          ['linear'],
+          ['get', 'case'],
+          6,
+          '#FCA107',
+          8,
+          '#7F3121'
+          ],
+          'circle-opacity': 0.75,
+          'circle-radius': [
+          'interpolate',
+          ['linear'],
+          ['get', 'size'],
+          6,
+          20,
+          8,
+          40
+          ]
+        }
+      });
 
-  map.addLayer({
-    'id': 'earthquake-labels',
-    'type': 'symbol',
-    'source': 'earthquakes',
-    'layout': {
-      'text-field': [
-      'concat',
-      ['to-string', ['get', 'mag']],
-      'm'
-      ],
-      'text-font': [
-      'Open Sans Bold',
-      'Arial Unicode MS Bold'
-      ],
-      'text-size': 12
-    },
-    'paint': {
-      'text-color': 'rgba(0,0,0,0.5)'
-    }
-  });
+      map.addLayer({
+        'id': 'case-labels',
+        'type': 'symbol',
+        'source': 'cases',
+        'layout': {
+          'text-field': [
+            'concat',
+            'Patient: ',
+            ['to-string', ['get', 'case']],
+            '\n',
+            ['to-string', ['get', 'place']]
+          ],
+          'text-font': [
+            'Open Sans Bold',
+            'Arial Unicode MS Bold'
+          ],
+          'text-size': 12
+        },
+        'paint': {
+          'text-color': 'rgba(0,0,0,0.5)'
+        }
+      });
 
-  // Set filter to first month of the year
-  // 0 = January
-  filterBy(0);
+      // Set filter to first day of the year
+      // 0 = January
+      filterBy(days[days.length-1]);
 
-  document
-    .getElementById('slider')
-    .addEventListener('input', function(e) {
-      var month = parseInt(e.target.value, 10);
-      filterBy(month);
-    });
-    }
+      document
+        .getElementById('slider')
+        .addEventListener('input', function(e) {
+          var day = days[e.target.value];
+          filterBy(day);
+        });
+      }
     );
   });
   </script>
