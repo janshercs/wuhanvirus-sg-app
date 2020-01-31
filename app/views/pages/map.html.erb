@@ -66,12 +66,10 @@
   <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
   <script>
     mapboxgl.accessToken = 'pk.eyJ1IjoidXBjb2RlIiwiYSI6ImNrMTY4bmh0czEyZTAzYnBrZmJ4NWFkbnoifQ.hzw0VGE11l-2P5LviigslQ';
-    // Set bounds to New York, New York
-      var bounds = [
-      // [-74.04728500751165, 40.68392799015035], // Southwest coordinates
-      // [-73.91058699000139, 40.87764500765852] // Northeast coordinates
-      [103.5920359, 1.1604753],
-      [104.1120359, 1.5304753]
+    // Set bounds to Singapore
+    var bounds = [
+      [103.5920359, 1.1604753], // Southwest coordinates
+      [104.1120359, 1.5304753]  // Northeast coordinates
     ];
 
     var map = new mapboxgl.Map({
@@ -83,18 +81,18 @@
     });
 
     var days = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December'
+      'January',
+      'February',
+      'March',
+      'April',
+      'May',
+      'June',
+      'July',
+      'August',
+      'September',
+      'October',
+      'November',
+      'December'
     ];
 
     function filterBy(day) {
