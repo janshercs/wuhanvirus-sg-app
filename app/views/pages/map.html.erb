@@ -49,7 +49,7 @@
       <div class="map-overlay-inner">
         <h2>Cases in Singapore</h2>
         <label id="day"></label>
-        <input id="slider" type="range" min="0" max="8" step="1" value="8" />
+        <input id="slider" type="range" min="0" max="<%= @dates.count-1 %>" step="1" value="<%= @dates.count-1 %>" />
       </div>
       <div class="map-overlay-inner">
         <div id="legend" class="legend">
@@ -80,17 +80,7 @@
       maxBounds: bounds
     });
 
-    var days = [
-      '23rd January 2020',
-      '24th January 2020',
-      '25th January 2020',
-      '26th January 2020',
-      '27th January 2020',
-      '28th January 2020',
-      '29th January 2020',
-      '30th January 2020',
-      '31st January 2020',
-    ];
+    var days = <%= raw(@dates) %>;
 
     function filterBy(day) {
       var filters = ['<=', 'day', day];
