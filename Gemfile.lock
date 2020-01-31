@@ -162,6 +162,10 @@ GEM
     rack (2.1.2)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
+    rack-tracker (1.9.0)
+      activesupport (>= 3.0)
+      rack (>= 1.4)
+      tilt (>= 1.4)
     rails (6.0.2.1)
       actioncable (= 6.0.2.1)
       actionmailbox (= 6.0.2.1)
@@ -278,6 +282,7 @@ DEPENDENCIES
   pry-rails
   pry-rescue
   puma (~> 4.1)
+  rack-tracker
   rails (~> 6.0.2, >= 6.0.2.1)
   rails_layout
   rubocop
