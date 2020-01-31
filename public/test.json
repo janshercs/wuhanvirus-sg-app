@@ -196,6 +196,330 @@
                 "url": "4"
             },
             "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    103.875684,
+                    1.351454
+                ],
+                "type": "Point"
+            },
+            "id": "us100049i1",
+            "properties": {
+                "alert": "red",
+                "code": "100049i1",
+                "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us100049i1&format=geojson",
+                "case": 8,
+                "size": 1,
+                "place": "Lorong Lew Lian",
+                "sources": "media",
+                "status": "confirmed",
+                "time": 1580252400000,
+                "patient": "56 years old Wuhan Man",
+                "type": "imported case",
+                "tz": 270,
+                "updated": 1580252400000,
+                "url": "4"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    103.875684,
+                    1.351454
+                ],
+                "type": "Point"
+            },
+            "id": "us100049i1",
+            "properties": {
+                "alert": "red",
+                "code": "100049i1",
+                "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us100049i1&format=geojson",
+                "case": 9,
+                "size": 1,
+                "place": "Lorong Lew Lian",
+                "sources": "media",
+                "status": "confirmed",
+                "time": 1580306400000,
+                "patient": "56 years old Wuhan Woman",
+                "type": "imported case",
+                "tz": 270,
+                "updated": 1580306400000,
+                "url": "4"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    103.864072,
+                    1.270347
+                ],
+                "type": "Point"
+            },
+            "id": "us100049i1",
+            "properties": {
+                "alert": "red",
+                "code": "100049i1",
+                "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us100049i1&format=geojson",
+                "case": 10,
+                "size": 1,
+                "place": "Marina South Pier",
+                "sources": "media",
+                "status": "confirmed",
+                "time": 1580306400000,
+                "patient": "56 years old Wuhan Man",
+                "type": "imported case",
+                "tz": 270,
+                "updated": 1580306400000,
+                "url": "4"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    103.864072,
+                    1.270347
+                ],
+                "type": "Point"
+            },
+            "id": "us100049i1",
+            "properties": {
+                "alert": "red",
+                "code": "100049i1",
+                "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us100049i1&format=geojson",
+                "case": 10,
+                "size": 1,
+                "place": "Marina South Pier",
+                "sources": "media",
+                "status": "confirmed",
+                "time": 1580306400000,
+                "patient": "56 years old Wuhan Man",
+                "type": "imported case",
+                "tz": 270,
+                "updated": 1580306400000,
+                "url": "4"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    103.821425,
+                    1.253273
+                ],
+                "type": "Point"
+            },
+            "id": "us100049i1",
+            "properties": {
+                "alert": "red",
+                "code": "100049i1",
+                "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us100049i1&format=geojson",
+                "case": 11,
+                "size": 1,
+                "place": "Village Hotel Sentosa",
+                "sources": "media",
+                "status": "confirmed",
+                "time": 1580338800000,
+                "patient": "31 years old Wuhan Female\nTravelling companion of 4th case.",
+                "type": "imported case",
+                "tz": 270,
+                "updated": 1580338800000,
+                "url": "4"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    103.878143,
+                    1.312361
+                ],
+                "type": "Point"
+            },
+            "id": "us100049i1",
+            "properties": {
+                "alert": "red",
+                "code": "100049i1",
+                "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us100049i1&format=geojson",
+                "case": 12,
+                "size": 1,
+                "place": "Lorong 12 Geylang",
+                "sources": "media",
+                "status": "confirmed",
+                "time": 1580338800000,
+                "patient": "37 years old Wuhan Female",
+                "type": "imported case",
+                "tz": 270,
+                "updated": 1580338800000,
+                "url": "4"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    103.846230,
+                    1.285702
+                ],
+                "type": "Point"
+            },
+            "id": "us100049i1",
+            "properties": {
+                "alert": "red",
+                "code": "100049i1",
+                "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us100049i1&format=geojson",
+                "case": 13,
+                "size": 1,
+                "place": "ParkRoyal Collection Pickering",
+                "sources": "media",
+                "status": "confirmed",
+                "time": 1580392800000,
+                "patient": "73 years old Chinese Female",
+                "type": "imported case",
+                "tz": 270,
+                "updated": 1580392800000,
+                "url": "4"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    103.844281,
+                    1.275880
+                ],
+                "type": "Point"
+            },
+            "id": "us100049i1",
+            "properties": {
+                "alert": "red",
+                "code": "100049i1",
+                "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us100049i1&format=geojson",
+                "case": 13,
+                "size": 1,
+                "place": "Oasia Hotel Downtown",
+                "sources": "media",
+                "status": "confirmed",
+                "time": 1580392800000,
+                "patient": "73 years old Chinese Female",
+                "type": "imported case",
+                "tz": 270,
+                "updated": 1580392800000,
+                "url": "4"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    103.734738,
+                    1.338488
+                ],
+                "type": "Point"
+            },
+            "id": "us100049i1",
+            "properties": {
+                "alert": "red",
+                "code": "100049i1",
+                "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us100049i1&format=geojson",
+                "case": 14,
+                "size": 1,
+                "place": "Jurong East Street 13",
+                "sources": "media",
+                "status": "confirmed",
+                "time": 1580425200000,
+                "patient": "31 years old Chinese Male",
+                "type": "imported case",
+                "tz": 270,
+                "updated": 1580425200000,
+                "url": "4"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    103.734738,
+                    1.338488
+                ],
+                "type": "Point"
+            },
+            "id": "us100049i1",
+            "properties": {
+                "alert": "red",
+                "code": "100049i1",
+                "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us100049i1&format=geojson",
+                "case": 14,
+                "size": 1,
+                "place": "Jurong East Street 13",
+                "sources": "media",
+                "status": "confirmed",
+                "time": 1580425200000,
+                "patient": "47 years old Chinese Male",
+                "type": "imported case",
+                "tz": 270,
+                "updated": 1580425200000,
+                "url": "4"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    103.989587,
+                    1.354797
+                ],
+                "type": "Point"
+            },
+            "id": "us100049i1",
+            "properties": {
+                "alert": "red",
+                "code": "100049i1",
+                "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us100049i1&format=geojson",
+                "case": 15,
+                "size": 1,
+                "place": "Changi Airport",
+                "sources": "media",
+                "status": "confirmed",
+                "time": 1580479200000,
+                "patient": "47 years old Singaporean Female",
+                "type": "imported case",
+                "tz": 270,
+                "updated": 1580479200000,
+                "url": "4"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    103.835934,
+                    1.279425
+                ],
+                "type": "Point"
+            },
+            "id": "us100049i1",
+            "properties": {
+                "alert": "red",
+                "code": "100049i1",
+                "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us100049i1&format=geojson",
+                "case": 16,
+                "size": 1,
+                "place": "Singapore General Hospital",
+                "sources": "media",
+                "status": "confirmed",
+                "time": 1580479200000,
+                "patient": "38 years old Chinese Male",
+                "type": "imported case",
+                "tz": 270,
+                "updated": 1580479200000,
+                "url": "4"
+            },
+            "type": "Feature"
         }
     ],
     "metadata": {
