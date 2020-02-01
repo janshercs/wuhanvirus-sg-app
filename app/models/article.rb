@@ -6,7 +6,7 @@ class Article < ApplicationRecord
 
   def link
     begin 
-      shortened_urls.first.unique_key
+      "/l/#{shortened_urls.first.unique_key}"
     rescue
       ""
     end
