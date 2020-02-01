@@ -69,10 +69,19 @@
   <script>
     mapboxgl.accessToken = 'pk.eyJ1IjoidXBjb2RlIiwiYSI6ImNrMTY4bmh0czEyZTAzYnBrZmJ4NWFkbnoifQ.hzw0VGE11l-2P5LviigslQ';
     // Set bounds to Singapore
-    var bounds = [
-      [103.5920359, 1.1604753], // Southwest coordinates
-      [104.1120359, 1.5304753]  // Northeast coordinates
-    ];
+    if ($(window).width() < 768) {
+      var bounds = [
+        [103.5920359, 1.1604753], // Southwest coordinates
+        [104.1120359, 1.6204753]  // Northeast coordinates
+      ];
+
+    } else {
+      var bounds = [
+        [103.5920359, 1.1604753], // Southwest coordinates
+        [104.1120359, 1.5304753]  // Northeast coordinates
+      ];
+    }
+
 
     var map = new mapboxgl.Map({
       container: 'map',
