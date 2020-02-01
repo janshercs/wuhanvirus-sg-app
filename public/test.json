@@ -520,6 +520,60 @@
                 "url": "4"
             },
             "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    103.989587,
+                    1.354797
+                ],
+                "type": "Point"
+            },
+            "id": "us100049i1",
+            "properties": {
+                "alert": "red",
+                "code": "100049i1",
+                "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us100049i1&format=geojson",
+                "case": 17,
+                "size": 1,
+                "place": "Changi Airport",
+                "sources": "media",
+                "status": "confirmed",
+                "time": 1580511600000,
+                "patient": "47 years old Singaporean Female",
+                "type": "imported case",
+                "tz": 270,
+                "updated": 1580511600000,
+                "url": "4"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    103.847273,
+                    1.322398
+                ],
+                "type": "Point"
+            },
+            "id": "us100049i1",
+            "properties": {
+                "alert": "red",
+                "code": "100049i1",
+                "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us100049i1&format=geojson",
+                "case": 18,
+                "size": 1,
+                "place": "National Centre for Infectious Diseases (NCID)",
+                "sources": "media",
+                "status": "confirmed",
+                "time": 1580565600000,
+                "patient": "31 years old Chinese National Female",
+                "type": "imported case",
+                "tz": 270,
+                "updated": 1580565600000,
+                "url": "4"
+            },
+            "type": "Feature"
         }
     ],
     "metadata": {
